@@ -1,4 +1,4 @@
  module "vpc" {
-   source = "git::https://github.com/eganaveen/tf-module-vpc.git?ref=main"
+   source = "./vendor/modules/vpc"
    vpccidr = var.VPC_CIDR
  }
