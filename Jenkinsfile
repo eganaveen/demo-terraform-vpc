@@ -1,8 +1,5 @@
 pipeline{
     agent any
-    tools{
-        terraform "terraform"
-    }
     parameters {
             choice(name: 'ENV', choices: ['dev', 'prod'], description: 'Pick environment')
         }
